@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 /*  COLUMS CONTAINER */
 .container {
-  width: 800px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -15,7 +18,6 @@
 /*  columns common */
 [class^="col-"] {
   float: left;
-  padding: 16px;
 }
 
 

@@ -1,61 +1,21 @@
-.row {
+/* COMMON */
+.container {
   width: 992px;
+}
+
+.container.grey{
+  background-color: #f9f9f9;
+}
+
+.row {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
 }
 
-/* BLOCCO LEZIONI */
-#lezioni .row > .left, #lezioni .row > .right{
-  width: 50%;
-  float: left;
-}
-
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#lezioni {
+[class^="col-"] {
+  padding: 16px;
   text-align: center;
-}
-
-/* BLOCCO STEPS */
-#steps .row > .left,
-#steps .row > .central,
-#steps .row > .right{
-  float: left;
-  width: 33%;
-}
-
-#steps{
-  text-align: center;
-}
-
-/* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
-
-#why .row > .first,
-#why .row > .second,
-#why .row > .third {
-  width: 100%;
-  margin-top: 80px;
-}
-
-#why .row img {
-  background-color:#428bca;
-  border-radius:50%;
-  padding:30px
-}
-
-/* COMMON */
-
-.container.grey{
-  background-color: #f9f9f9;
 }
 
 img{
@@ -65,3 +25,19 @@ img{
 .clear {
   clear:both;
 }
+
+/* WHY */
+#why .row > [class^="col-"] {
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+
+@media all and (min-width: 1200px) {}
+@media all and (min-width: 769px) and (max-width: 1199px) {}
+@media all and (max-width: 768px) {}

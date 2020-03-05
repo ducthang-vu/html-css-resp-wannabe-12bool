@@ -40,11 +40,37 @@ img{
 
 
 /* RESPONSIVE */
+@media all and (min-width: 1200px) {
+  body {
+    background: #DCDCDC;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .container.grey:not(:last-child) {
+    background-color: #DAA520;
+  }
+
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  [class^="col-"] {
+    margin-bottom: 35px;
+  }
+}
+
+
 @media all and (min-width: 770px) and (max-width: 1199px) {
 
   body {
     background: lightblue;
   }
+
   .container {
     max-width: 900px;
   }
@@ -66,7 +92,7 @@ img{
 @media all and (max-width: 769px) {
 
   body {
-    background: orange;
+    background: darkorange;
   }
 
   img {
@@ -90,11 +116,15 @@ img{
 
   #lezioni p {
     padding-bottom: 10px;
-    border-bottom: 3px solid darkorange;
+    border-bottom: 3px solid orange;
   }
 
   #steps p:not(.last) {
     padding-bottom: 10px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid darkorange;
+  }
+
+  hr {
+    color: darkorange;
   }
 }
